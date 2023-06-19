@@ -1,14 +1,16 @@
 // _variables.scss
-
 $breakpoints: (
-    "extra-small": 320px,
-    "small": 480px,
-    "medium": 768px,
-    "large": 1024px,
-    "extra-large": 1200px,
     "xs": 320px,
     "sm": 480px,
     "md": 768px,
     "lg": 1024px,
     "xl": 1200px
+);
+
+$spacing: (
+    1rem,
+    2rem,
+    3rem,
+    4rem,
+    5rem
 );

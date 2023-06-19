@@ -10,11 +10,11 @@
 ::before {
     box-sizing: border-box;
 
-    @include media-query("medium") {
+    @include media-query("md") {
         line-height: 1.5;
     }
 
-    @include media-query("extra-large") {
+    @include media-query("xl") {
         line-height: 1.75;
     }
 }

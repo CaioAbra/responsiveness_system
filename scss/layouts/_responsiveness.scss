@@ -1,35 +1,30 @@
 // Estilos para o elemento com classe "container"
 .container {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    padding: 0 nth($spacing, 1);
+    max-width: 100%;
 
-    @include media-query("extra-small") {
-        padding: 0 1rem;
-        max-width: 100%;
+    @include media-query("sm") {
+        padding: 0 nth($spacing, 2);
+        max-width: 34rem;
     }
 
-    @include media-query("small") {
-        padding: 0 2rem;
-        max-width: 34rem; // Exemplo de tamanho responsivo em rem
-    }
-
-    @include media-query("medium") {
-        padding: 0 3rem;
+    @include media-query("md") {
+        padding: 0 nth($spacing, 3);
         max-width: 48rem;
     }
 
-    @include media-query("large") {
-        padding: 0 4rem;
-        max-width: calc(100vw - 8rem);
+    @include media-query("lg") {
+        padding: 0 nth($spacing, 4);
+        max-width: calc(100vw - #{nth($spacing, 4)});
     }
 
-    @include media-query("extra-large") {
-        padding: 0 5rem;
-        max-width: calc(100vw - 12rem);
+    @include media-query("xl") {
+        padding: 0 nth($spacing, 5);
+        max-width: calc(100vw - #{nth($spacing, 5)} * 2);
     }
 }
-
 
 // Classe para o elemento com classe "row"
 .row {
@@ -84,4 +79,3 @@ $max-width in $breakpoints {
         }
     }
 }
-
