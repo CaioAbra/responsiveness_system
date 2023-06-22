@@ -367,6 +367,10 @@ h6 {
   margin-bottom: 1.8vh;
 }
 
+p {
+  line-height: 1.3;
+}
+
 *,
 ::after,
 ::before {
